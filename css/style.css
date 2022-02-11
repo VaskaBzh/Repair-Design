@@ -358,6 +358,7 @@ template {
   border-radius: 2px;
   text-transform: uppercase;
   font-size: 0.93rem;
+  outline: none;
 }
 .button:hover {
   cursor: pointer;
@@ -394,6 +395,7 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0;
+  outline: none;
 }
 .input::-moz-placeholder {
   color: #fff;
@@ -427,6 +429,10 @@ template {
   border-radius: 1px;
   cursor: pointer;
   margin-right: 0.64rem;
+}
+.policy__label--center {
+  justify-content: center;
+  font-size: 1.1428rem;
 }
 
 label.invalid {
@@ -1171,39 +1177,56 @@ img {
   padding-top: 0;
   padding-bottom: 25.286rem;
 }
+.feedback .container {
+  max-width: 88.2857rem;
+}
+.feedback .section-title {
+  margin-bottom: 3.3rem;
+}
 .feedback .section-title__subtitle {
   max-width: 25.71rem;
+}
+.feedback .section-title__heading {
+  font-size: 1.42857rem;
+  margin-bottom: 0.9rem;
+}
+.feedback .section-title__image {
+  margin-bottom: 1.3rem;
 }
 .feedback-item {
   padding: 1.714rem 1.429rem 5.642rem;
   max-width: 26.857rem;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 .feedback-item__title {
   display: flex;
   align-items: center;
 }
 .feedback-item__img {
-  margin-right: 1.643rem;
+  margin-right: auto;
 }
 .feedback-item__text {
   font-size: 1.07rem;
   line-height: 1.928rem;
   color: #959595;
 }
-.feedback-item .card-title {
-  max-width: 14.07rem;
+.feedback-item .card__title {
+  max-width: 17rem;
+  margin-bottom: -0.4rem;
+  line-height: 125%;
 }
 .feedback-item__data {
   display: flex;
-  margin-top: -2.286rem;
+  margin-top: -3.5rem;
+  max-height: 3.857rem;
 }
 .feedback-square {
   display: flex;
   align-items: center;
   background: #E3B873;
   border-right: 0.75px solid #fff;
-  padding-right: 1rem;
-  padding-left: 1.3rem;
+  padding: 0 1.6rem 0 1.1rem;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 .feedback-square .feedback__text {
   text-transform: uppercase;
@@ -1221,7 +1244,8 @@ img {
   display: flex;
   align-items: center;
   background: #E3B873;
-  padding-right: 1.714rem;
+  padding-right: 1.9rem;
+  box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 .feedback-days .feedback__img {
   padding-left: 1rem;
@@ -1230,6 +1254,9 @@ img {
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem;
+}
+.footer .policy__label {
+  margin-left: -1.6rem;
 }
 .footer__wrap {
   background-color: #181818;
