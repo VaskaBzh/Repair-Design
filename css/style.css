@@ -1253,7 +1253,7 @@ img {
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
-  padding-top: 3rem;
+  padding: 3rem 0 0;
 }
 .footer .policy__label {
   margin-left: -1.6rem;
@@ -1262,8 +1262,8 @@ img {
   background-color: #181818;
   max-width: 63.07rem;
   margin: auto;
-  margin-top: -20rem;
-  margin-bottom: 3.71rem;
+  margin-top: -19rem;
+  margin-bottom: 3.51rem;
   padding: 2.5rem;
 }
 .footer__title {
@@ -1301,6 +1301,7 @@ img {
 .footer__policy {
   flex-basis: 100%;
   margin-bottom: 3.5rem;
+  margin-top: 0.4rem;
 }
 .footer__button {
   margin: auto;
@@ -1308,14 +1309,9 @@ img {
 }
 .footer__menu {
   background-color: #131313;
-  padding: 4.285rem 0;
+  padding: 3.429rem 0;
 }
-.footer .contacts {
-  text-align: center;
-  margin-top: 3.71rem;
-  margin-bottom: 3.14rem;
-}
-.footer .contacts__desc {
+.footer__menu__desc {
   margin: auto;
   font-family: "Yeseva One", cursive;
   font-weight: normal;
@@ -1324,26 +1320,60 @@ img {
   max-width: 42.07rem;
   margin-bottom: 1.85rem;
 }
-.footer .contacts__desc--primary {
+.footer__menu__desc--primary {
   color: #E3B873;
 }
-.footer .contacts__buttons {
+.footer__menu__buttons {
   display: flex;
   justify-content: space-between;
   max-width: 71px;
   margin: auto;
 }
-.footer .contacts__imgs {
+.footer__menu__imgs {
   background: #E3B873;
   border-radius: 50%;
   width: 28px;
   height: 28px;
 }
-.footer .contacts__imgs:first-child {
+.footer__menu__imgs:first-child {
   background: #E3B873 url("../img/mail.svg") no-repeat center;
 }
-.footer .contacts__imgs:last-child {
+.footer__menu__imgs:last-child {
   background: #E3B873 url("../img/inst.svg") no-repeat center;
+}
+.footer__after__title {
+  position: relative;
+  font-family: "Yeseva One", cursive;
+  text-transform: uppercase;
+  font-size: 1.429rem;
+  line-height: 2rem;
+  text-align: center;
+  color: #E3B873;
+  max-width: 35.714rem;
+  margin: auto auto 6.929rem;
+  font-weight: normal;
+}
+.footer__after__title::after {
+  content: "";
+  position: absolute;
+  top: 5.6rem;
+  left: 18.3rem;
+  width: 28px;
+  height: 28px;
+  background: #E3B873 url(../img/instagram.png) no-repeat center;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.footer__after__title::before {
+  content: "";
+  position: absolute;
+  top: 5.6rem;
+  left: 15.2rem;
+  width: 28px;
+  height: 28px;
+  background: #E3B873 url(../img/message.png) no-repeat center;
+  border-radius: 100%;
+  cursor: pointer;
 }
 .footer__map {
   margin: auto;
