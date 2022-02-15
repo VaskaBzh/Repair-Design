@@ -4,6 +4,21 @@
     .nav
         &__item
             margin-right: 1rem
+    .styles
+        &-img
+            max-width: 20rem
+        .col
+            .col-1
+                top: 5%
+            .col-2
+                top: -2%
+    .step
+        &-img
+            height: auto
+    .steps
+        &__swiper
+            &:nth-child(2)
+                max-width: 50rem
 @media screen and ( max-width: 992px )
     .nav
         display: none
@@ -12,7 +27,64 @@
             display: none
         &__content
             margin-left: 0
+    .steps
+        &__swiper
+            &:nth-child(2)
+                display: none
+    .plan
+        padding-bottom: 2rem
+        .row
+            flex-wrap: wrap
+            justify-content: center
+    .styles
+        margin-bottom: 0
+        &-img
+            max-width: 17rem
+        .col
+            .col-1
+                display: none
+            .col-2
+                display: none
+    .projects
+        .container
+            .row
+                .col-50
+                    .section-title
+                        .section-title
+                            &__text
+                                max-width: 26rem
+    .feedback
+        .container
+            .row
+                flex-wrap: wrap
+                .col
+                    flex-basis: 100%
+                    display: flex
+                    flex-direction: column
+                    align-items: center
+                    justify-content: flex-start
+                    margin-bottom: 2rem
+    .types
+        .container
+            .row
+                flex-wrap: wrap
+            .col-30
+                flex-basis: 100%
+                display: flex
+                flex-direction: column
+                align-items: center
+                justify-content: flex-start
+                margin-bottom: 2.5rem
+    .scroll
+        &__block
+            display: none
+            
 @media screen and ( max-width: 760px)
+    .section
+        padding-left: 0
+        padding-right: 0
+    .plan
+        display: none
     .row
         flex-direction: column
         align-items: center
@@ -22,7 +94,73 @@
     .card
         &__text
             margin-left: 0
+    .projects
+            .row
+                align-items: flex-start
+                .col-50
+                    &:nth-child(2)
+                        .swiper
+                            display: none
+    .types1
+        background: $dark
+        color: $light
+    .team
+        background: $dark
+        padding-top: 35rem
+        .col
+            margin-bottom: 3.5rem
+    .styles
+        display: none
+        background: #fff 
+        &::before
+            display: none
+        .container
+            background: url(../img/webp/styles-bg.webp) no-repeat center/cover
+            min-height: 15rem
+        .row
+            display: none
+    .steps
+        display: none
+    .feedback
+        display: none
 @media screen and ( max-width: 570px )
+    .container
+        width: 90%
+    .projects
+            .row
+                align-items: flex-start
+                .col-50
+                    width: 100%
+                    &:nth-child(1)
+                        .swiper 
+                            margin: auto
+                    &:nth-child(2)
+                        .swiper
+                            display: block
+                            width: 90%
+                            margin: auto
+    .control
+        background: $dark
+        color: $light
+        &__policy
+            order: 2
+            margin-bottom: 1.5rem
+            margin-left: 0
+        &__form
+            flex-wrap: wrap
+        &__input-group
+            flex-basis: 100%
+            margin-bottom: 2rem
+            border-bottom: 1px solid rgba($light, 0.4)
+        &__button
+            width: 100%
+            order: 3
+        &__input
+            color: $light
+        &__label
+            color: $light
+    .footer
+        background: $dark
     .contacts
         &__phone
             margin-right: 0
@@ -33,6 +171,8 @@
     .title
         font-size: 1.64rem
     .hero
+        padding-bottom: 10px
+        padding-top: 40px
         &__scroll-down
             display: none
         &__content
@@ -44,7 +184,18 @@
             display: block
             min-width: 22.86rem
             margin-bottom: 1.85rem
-@media screen and ( max-height: 520px )
+@media screen and ( max-width: 375px )
     .hero
         &__scroll-down
             display: none
+    .footer
+        padding-bottom: 2rem
+        &__menu
+            display: none
+        &__after__title
+            &::after
+                left: 14.3rem
+                top: 7rem
+            &::before
+                left: 11.3rem
+                top: 7rem

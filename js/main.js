@@ -196,6 +196,53 @@ $(document).ready(function () {
             }
         });
 
+        $('.plan__block__form').validate({
+          errorClass: "invalid",
+          rules: {
+              // simple rule, converted to {required:true}
+              userName: {
+                required: true,
+                minlength: 2,
+                maxlength: 15
+              },
+              userPhone: "required",
+              // compound rule
+              userEmail: {
+                required: true,
+                email: true
+              }
+            },
+            errorElement:"div",
+            messages: {
+              userName: {
+                  required:"Имя обязательно",
+                  minlength:"Имя не короче двух символов",
+                  maxlength:"Имя не длиннее 15 символов"
+              },
+              userPhone: "Обязательно укажите телефон",
+              userEmail: {
+                required: "Обязательно укажите email",
+                email: "Введите корректный email, в формате: name@domain.com"
+              },
+            },
+            submitHandler: function(form) {
+              $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                  alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+                  $(form)[0].reset();
+                  modal.removeClass('modal--visible');
+                },
+                error: function (response) {
+                  console.error('Ошибка запроса ' + response);
+                  ym('87512139', 'reachGoal', 'button'); return true;
+                }
+              });
+            }
+      });
+
         $('.footer__form').validate({
           errorClass: "invalid",
           rules: {

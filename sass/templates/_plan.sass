@@ -1,8 +1,9 @@
 .plan
+    padding-bottom: 200px 
     &__ul
         background: url('../img/plan.png') no-repeat left
         min-height: 49.43rem
-        max-width: 780px
+        max-width: 750px
         width: 100%
         margin-right: 4rem
         &__text
@@ -22,30 +23,48 @@
                 max-width: 18.286rem
                 margin-top: 8.5rem
                 margin-left: 32rem
-    &-form
-        background-color: $dark
-        padding: 2rem 3.5rem 
-        margin-top: 7.7rem
-        &__title
-            font-family: 'Futura Demi',cursive
-            font-weight: 500
-            font-size: 1.43rem
-            line-height: 1.786rem
-            text-align: center
-            margin: auto
+    &__block
+        max-width: 36.142rem
+        width: 100%
+        display: flex
+        flex-direction: column
+        &__form
+            display: flex
+            flex-direction: column
+        &-form
+            position: relative
+            max-width: 36.36rem
+            background: $dark url('../img/bg-liness.svg') no-repeat center
             color: $light
-            max-width: 21.214rem
-            margin-bottom: 2.857rem
-        .policy__label
+            padding: 2rem 3.5rem 
+            margin-top: 7.7rem
+            margin-bottom: 3.5rem
+            &__title
+                font-family: 'Futura Demi'
+                font-weight: 500
+                font-size: 1.43rem
+                line-height: 1.786rem
+                text-align: center
+                margin: auto
+                color: $light
+                max-width: 21.214rem
+                margin-bottom: 2.857rem
+        &__input
+            &-group
+                margin-bottom: 3.428rem
+                display: flex
+                flex-direction: column
+                &:last-of-type
+                    margin-bottom: 1rem
+        &__policy
+            margin-bottom: 2.7rem
             color: $light
-        .button
+        &__button
             align-self: flex-end
             font-size: 0.92rem
             padding: 20px 40px
-        .modal__input-group
-            margin-bottom: 2.1rem
-        .email_input
-            margin-bottom: -1rem
+            .email_input
+                margin-bottom: -1rem
 .discounts-container
     display: flex
     justify-content: flex-end
@@ -56,8 +75,23 @@
         width: 100%
         margin-top: -2.5rem
         margin-right: 4rem
+        &__econom
+            background: $primary
+            max-width: 72px
+            width: 100%
+            border-radius: 100%
+            min-height: 72px
+            display: flex
+            justify-content: center
+            align-items: center
+            &__img
+                max-width: 40px
+                width: 100%
+                min-height: 33px
         &__text
             font-family: 'Futura Demi', cursive
             font-size: 1.429rem
             line-height: 1.786rem
             color: $primary   
+            margin-left: 0.7rem
+            margin-top: 0.8rem
