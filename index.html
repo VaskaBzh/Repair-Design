@@ -357,11 +357,58 @@
             <!-- /.container -->
         </section>
         <!-- /.section types -->
+        
         <section class="section plan">
             <div class="container">
-                
+                <div class="row plan">
+                    <div class="col plan__ul wow animate__animated animate__fadeInLeft" data-wow-delay="0.3s">
+                        <p class="plan__ul__text">Наш специалист приедет для замеров в день контакта или назна  чит удобнуюдля вас дату</p>
+                        <p class="plan__ul__text">Бесплатный замер</p>
+                        <p class="plan__ul__text">Бесплатная консультация</p>
+                        <p class="plan__ul__text">Получите смету расходов и сроки вашего будущего ремонта
+                        </p>
+                    </div>
+                    <!-- /.col plan -->
+                    <div class="col form-plan wow animate__animated animate__fadeInRight" data-wow-delay="0.3s">
+                        <div class="plan-form">
+                            <h3 class="plan-form__title">Оставьте заявку на бесплатный выезд замерщика</h3>
+                            <form action="send.php" method="POST" class="form modal__form">
+                                <div class="input-group modal__input-group">
+                                    <label for="modal-user-name" class="label form__label label--light">Имя</label>
+                                    <input type="text" name="userName" class="input from__input modal__input input--light" id="modal-user-name" placeholder="Как вас зовут:">
+                                </div>
+                                <div class="input-group modal__input-group">
+                                    <label for="modal-user-phone" class="label form__label label--light">Телефон</label>
+                                    <input type="tel" name="userPhone" class="input from__input modal__input input--light" id="modal-user-phone" placeholder="Ваш телефон:">
+                                </div>
+                                <div class="input-group modal__input-group email_input">
+                                    <label for="modal-user-email" class="label form__label label--light">Email</label>
+                                    <input type="email" name="userEmail" class="input from__input modal__input input--light" id="modal-user-email" placeholder="Ваш email">
+                                </div>
+                                <div class="policy modal__policy">
+                                    <input type="checkbox" name="policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                                    <label for="modal-policy-checkbox" class="policy__label">Я соглашаюсь с обработкой данных</label>
+                                </div>
+                                <!-- /.policy -->
+                                <button onclick="ym(87472899,'reachGoal','questionButton'); return true;"class="button button--primary">Вызвать замерщика</button>
+                            </form>
+                            <!-- /.form modal__form -->
+                        </div>
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+                <div class="discounts-container">
+                    <div class="discounts">
+                        <img src="./img/disocunt.png" alt="Скидки" class="discounts__img">
+                        <p class="discounts__text">Это поможет сэкономить 10 - 20% от стоимости материалов</p>
+                    </div>
+                    <!-- /.discounts -->
+                </div>   
             </div>
             <!-- /.container -->
+        </section>
+        <!-- /.section plan -->
         </section>
         <!-- /.section plan -->
         <section class="section types">
