@@ -137,7 +137,23 @@ $(document).ready(function () {
                 userEmail: {
                   required: "Обязательно укажите email",
                   email: "Введите корректный email, в формате: name@domain.com"
-                }
+                },
+              },
+              submitHandler: function(form) {
+                $.ajax({
+                  type: "POST",
+                  url: "send.php",
+                  data: $(form).serialize(),
+                  success: function (response) {
+                    alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+                    $(form)[0].reset();
+                    modal.removeClass('modal--visible');
+                  },
+                  error: function (response) {
+                    console.error('Ошибка запроса ' + response);
+                    ym('87512139', 'reachGoal', 'button'); return true;
+                  }
+                });
               }
         });
         $('[type=tel]').mask('+7(000) 000-00-00');
@@ -161,7 +177,23 @@ $(document).ready(function () {
                   maxlength:"Имя не длиннее 15 символов"
               },
               userPhone: "Обязательно укажите телефон",
-              },
+            },
+            submitHandler: function(form) {
+              $.ajax({
+                type: "POST",
+                url: "send.php",
+                data: $(form).serialize(),
+                success: function (response) {
+                  alert('Форма отправлена, мы свяжемся с вами через 10 минут');
+                  $(form)[0].reset();
+                  modal.removeClass('modal--visible');
+                },
+                error: function (response) {
+                  console.error('Ошибка запроса ' + response);
+                  ym('87512139', 'reachGoal', 'button'); return true;
+                }
+              });
+            }
         });
 
         $('.footer__form').validate({

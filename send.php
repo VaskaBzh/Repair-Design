@@ -32,7 +32,7 @@ try {
     $mail->Subject = 'Новая заявка';
     $mail->Body    = "Имя пользователя: $[userName}, его телефон: ${userPhone}. Его почти: ${userEmail}";
 
-    if ($mail->send();) {
+    if ($mail->send()) {
         echo "ok";
     } else {
         echo "Письмо не отправлено, есть ошибка. Код ошибки: {$mail->ErrorInfo}";
