@@ -200,7 +200,7 @@ $(document).ready(function () {
                 },
                 error: function (response) {
                   console.error('Ошибка запроса ' + response);
-                  
+                  ym('87512139', 'reachGoal', 'button'); return true;
                 }
               });
             }
