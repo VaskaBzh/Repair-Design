@@ -3,10 +3,11 @@
     display: flex
     flex-direction: column
     justify-content: center
-    background: url('../img/webp/styles-bg.webp') no-repeat center / cover
-    padding-top: 8rem
-    padding-bottom: 5.142rem
+    background: url('../img/styles-bg.png') no-repeat center / cover
+    padding: 0
     margin-bottom: 8rem
+    max-height: 61.714rem
+    min-height: 61.714rem
     .container
         z-index: 3
     &::before
@@ -36,19 +37,20 @@
             &:hover
                 color: $primary
                 text-decoration: underline
+    &__col
+        max-width: 53.929rem
+        &__l
+            max-width: 29.357rem
+            margin-top: 10rem
     .col
         display: flex
         flex-direction: column
         .col-1
-            position: absolute
-            top: -5%
-            right: 34%
             margin-right: 3.07rem
+            max-width: 25.214rem
         .col-2
-            position: absolute
-            top: -13%
-            right: 16%
-            padding-bottom: 5.714rem
+            max-width: 25.214rem
+            margin-top: -7rem
     &-img
         max-width: 25.286rem
         &:first-of-type

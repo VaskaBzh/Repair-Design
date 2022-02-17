@@ -33,7 +33,8 @@ $(document).ready(function () {
       modalBtn = $('[data-toggle=modal]'),
       closeBtn = $('.modal__close'),
       scrollUpBtn = $('.scroll__block'),
-      scrollDownBtn = $('.hero__scroll-down');
+      scrollDownBtn = $('.hero__scroll-down'),
+      stopMenu = $('.footer__button');
   
   
   modalBtn.click(function () {
@@ -57,6 +58,12 @@ $(document).ready(function () {
     if($(this).scrollTop () > 85) {
         scrollUpBtn.addClass('scroll__block--visible');
     } else {
+        scrollUpBtn.removeClass('scroll__block--visible');
+    }
+  });
+
+  $(window).scroll(function () { 
+    if($(this).scrollTop () > stopMenu.offset().top) {
         scrollUpBtn.removeClass('scroll__block--visible');
     }
   });
