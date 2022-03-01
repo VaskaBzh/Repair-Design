@@ -69,10 +69,15 @@ function fonts(done) {
 }
 
 function imagemin(done) {
-    src('img/**/**')
+    src('img/**/*.png')
+        .pipe(tinypng({key: 'b4c9Yhd9qrG37n8hf3xRK6KYR8mjrcdG'}))
+        .pipe(dest('dist/img/'))
+    src('img/**/*.jpg')
         .pipe(tinypng({key: 'b4c9Yhd9qrG37n8hf3xRK6KYR8mjrcdG'}))
         .pipe(dest('dist/img/'))
     src('img/**/*.svg')
+        .pipe(dest('dist/img/'))
+    src('img/**/*.webp')
         .pipe(dest('dist/img/'))
     done();
 };
